@@ -25,12 +25,21 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
-  <body>
+  <body onload="transcriptEnglish()">
     <div id="particles-js">
+      <div class="languague">
+        <span class="lang-icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+        <span class="lang-script" id="language">English</span>
+        <span class="lang-drop"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+      </div>
+      <div class="dropdown" id="languageDropdown">
+        <div class="dropdown-content" data-lang="English">English</div>
+        <div class="dropdown-content" data-lang="Português">Português</div>
+      </div>
       <div class="header">
         <h1>
           <span class="site-title">Martinho C. Mussamba</span>
-          <span class="site-description">Computer Engineer • FullStack Developer • DevOps</span>
+          <span id="profile" class="site-description">Computer Engineer • FullStack Developer • DevOps</span>
         </h1>
         <div class="header-icons">
           <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/martinhomussamba/">
@@ -43,7 +52,7 @@
           ></a>
         </div>
         <div class="header-links">
-          <a class="link" href="#about" data-scroll>Sobre Mim</a>
+          <a class="link" href="#about" data-scroll id="about-link">Sobre Mim</a>
         </div>
       </div>
       <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -53,7 +62,7 @@
     <section id="about">
       <!-- User Introduction-->
       <div class="user-details">
-        <h1>Sobre Mim</h1>
+        <h1 id="about-me">Sobre Mim</h1>
         <picture>
           <img
             src="./assets/img/jpg/me-circe.jpg"
@@ -62,7 +71,7 @@
             style="border-radius: 50%"
           />
         </picture>
-        <p>
+        <p id="bio-desc">
           Hi, I am Martinho Correia Mussamba, a Full Stack Developer residing in Luanda, Angola. With a deep passion for technology and a drive to create innovative software solutions, I have successfully contributed to various projects for Angolan companies as well as open-source initiatives. My expertise spans across the full stack of development, ensuring comprehensive and efficient solutions from frontend to backend. Currently, I am expanding my skill set by learning and working with Docker and AWS Cloud.
         </p>
       </div>
@@ -71,44 +80,41 @@
       <div class="user">
         <!-- Technology Stack #1: Languages -->
         <div class="tech">
-          <h2>Linguaguens</h2>
+          <h2 id="programming-languages">Linguaguens</h2>
           <i class="devicon-java-plain-wordmark colored"></i>
           <i class="devicon-javascript-plain colored"></i>
           <i class="devicon-typescript-plain colored"></i>
-          <p>Linguagues que já trabalhei durante a minha carreira em desenvolvimento.</p>
         </div>
 
         <!-- Technology Stack #2: Front-End -->
         <div class="tech">
-          <h2>Front-End</h2>
+          <h2 id="frontend">Front-End</h2>
           <i class="devicon-html5-plain-wordmark colored"></i>
           <i class="devicon-css3-plain-wordmark colored"></i>
-          
+          <i class="devicon-sass-original"></i>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="60" height="80">
             <path style="fill:#dd4b25;" d="M64 15.36L16.33 32.36 23.6 95.39 64 117.76 104.4 95.39 111.67 32.36Z"/>
             <path style="fill:#f06529;" d="M64 15.36L64 26.73 64 117.76 104.4 95.39 111.67 32.36Z"/>
             <path style="fill:#ffffff;" d="M64 26.68L34.2 93.49 45.31 93.49 51.3 78.54 76.59 78.54 82.59 93.49 93.7 93.49ZM72.7 69.32L55.3 69.32 64 48.38Z"/>
           </svg>
-          
-                    
-          <p>Tecnologias frontend que já trabalhei durante a minha carreira profissional.</p>
+
         </div>
 
         <!-- Technology Stack #3: Back-End -->
         <div class="tech">
-          <h2>Back-End</h2>
+          <h2 id="backend">Back-End</h2>
           <i class="devicon-nodejs-plain colored"></i>
           <i class="devicon-express-original-wordmark colored"></i>
           <i class="devicon-oracle-original colored"></i>
           <i class="devicon-postgresql-plain-wordmark colored"></i>
-          <p>Tecnologias frontend que já trabalhei durante a minha carreira profissional</p>
-        </div>
+       </div>
 
         <!-- Technology Stack #4: Tools -->
         <div class="tech">
-          <h2>Ferramentas</h2>
+          <h2 id="tools">Ferramentas</h2>
           <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-visualstudio-plain colored"></i>
+          <i class="devicon-amazonwebservices-plain-wordmark"></i>
+<!--          <i class="devicon-visualstudio-plain colored"></i>-->
           <i class="devicon-github-plain-wordmark colored"></i>
           <i class="devicon-docker-plain-wordmark colored"></i>
           <i class="devicon-kubernetes-plain colored"></i>
