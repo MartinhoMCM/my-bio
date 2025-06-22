@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded",function(){new SweetScroll({}),part
     function transcriptPt() {
             document.getElementById('about-me').innerText = 'Sobre Mim';
             document.getElementById('about-link').innerText = 'Sobre Mim';
-            document.getElementById('profile').innerText = 'Engenheiro Informático • Desenvolvedor FullStack • DevOps CI/CD';
+            document.getElementById('profile').innerText = 'Engenheiro Informático • Desenvolvedor FullStack • Analista de Dados';
             document.getElementById('bio-desc').innerText = 'Olá, eu sou Martinho Correia Mussamba, um Desenvolvedor Full Stack residente em Luanda, ' +
                 'Angola. Com uma paixão profunda por tecnologia e um desejo de criar soluções inovadoras de software, ' +
                 'contribuí com sucesso para vários projetos de empresas angolanas, bem como iniciativas de código aberto. ' +
